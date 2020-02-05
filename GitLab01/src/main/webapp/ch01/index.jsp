@@ -1,9 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
-<link rel='stylesheet' href='${pageContext.request.contextPath}/css/style.css' />
+<link rel='stylesheet' href="<c:url value='/css/style.css' />" >
 <meta charset="UTF-8">
 <title>會員資料管理</title>
 </head>  
@@ -16,7 +17,7 @@
 <a href='queryMember.do' >會員資料查詢</a><br>
 <br>
 
-<a href='..'>回前頁</a>
+<a href="<c:url value='/index.jsp' />">回首頁</a>
 </div>
 </body>
 </html>
